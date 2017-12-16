@@ -1,3 +1,4 @@
+
 var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles']
 //Do not modify original array
 function addElementToBeginningOfArray(array, element) {
@@ -35,6 +36,7 @@ function destructivelyRemoveElementFromEndOfArray(array) {
   return array
 }
 //splice method takes an index as 1st arg, the number of elements to remove as 2nd, and any number of elements to add as any args after the 2nd (all are optional)
+//nondestructive removal from array should not mutate the original array.
 function removeElementFromEndOfArray(array) {
   array = array.slice(0, array.length - 1)
   return array
